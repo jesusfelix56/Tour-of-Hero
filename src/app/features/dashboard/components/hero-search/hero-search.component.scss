@@ -1,0 +1,39 @@
+@use "../../../../../assets/styles/dashboard-theme.scss" as *;
+
+#searchComponent {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.searchResult {
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+    width: 12rem;
+    margin-bottom: 0.5rem;
+    background-color: $color-white;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: $color-text-primary;
+      border: 1px solid$color-border-muted;
+      border-radius: $radius-md;
+
+      &:hover {
+        background-color: $color-brand-dark;
+        color: $color-white;
+      }
+    }
+  }
+}
