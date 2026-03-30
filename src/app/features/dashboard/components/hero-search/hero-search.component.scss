@@ -1,0 +1,14 @@
+@use "../../../../../assets/styles/dashboard-theme.scss" as *;
+
+#searchComponent {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+}

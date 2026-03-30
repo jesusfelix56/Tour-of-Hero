@@ -1,0 +1,33 @@
+@use "../../../../../assets/styles/dashboard-theme.scss" as *;
+
+
+.details {
+  margin-top: 1rem;
+
+  label {
+    color: $color-label;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  input {
+    font-size: 1em;
+    padding: 0.5rem;
+    width: 14em;
+    max-width: 100%;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-right: 0.5rem;
+    background-color: $color-button-muted;
+    padding: 1rem;
+    border-radius: $radius-md;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: $color-button-hover;
+    }
+  }
+}

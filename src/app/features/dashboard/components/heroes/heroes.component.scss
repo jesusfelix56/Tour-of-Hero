@@ -1,0 +1,91 @@
+@use "../../../../../assets/styles/dashboard-theme.scss" as *;
+
+.heroes {
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style-type: none;
+  width: 15em;
+
+  li {
+    margin: 0.5em 0;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      left: 0.1em;
+    }
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3em 0;
+    border-radius: $radius-md;
+    background-color: $radius-md;
+    color: $color-text-primary;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0.5em;
+    height: 1.6em;
+
+    &:hover {
+      color: $color-link-hover;
+      background-color: $color-surface-hover;
+    }
+
+    &:active {
+      background-color: $color-delete;
+      color: $color-text-on-dark-soft;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: small;
+      padding: 0.8em 0.7em 0 0.7em;
+      background-color: $color-badge;
+      color: $color-white;
+      line-height: 1em;
+      position: relative;
+      left: -1px;
+      top: -4px;
+      height: 1.8em;
+      min-width: 16px;
+      text-align: right;
+      margin-right: 0.8em;
+      border-radius: $radius-md 0 0$radius-md;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.addButton {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-brand-dark;
+  }
+}
+
+button.delete {
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  background-color: $color-white;
+  color: $color-delete;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+
+  &:hover {
+    background-color: $color-delete;
+    color: $color-white;
+  }
+}

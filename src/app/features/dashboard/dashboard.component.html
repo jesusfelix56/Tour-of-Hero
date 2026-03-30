@@ -1,0 +1,14 @@
+<main class="appShell">
+  <h1>{{ title }}</h1>
+  <nav>
+    <div class="navLinks">
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/dashboard/heroes">Heroes</a>
+    </div>
+    <app-nav-hero-search></app-nav-hero-search>
+  </nav>
+  <section class="view">
+    <router-outlet></router-outlet>
+  </section>
+  <app-messages></app-messages>
+</main>
